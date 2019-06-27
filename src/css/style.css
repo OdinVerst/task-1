@@ -1,6 +1,12 @@
 body {
   margin: 0;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+/*base*/
 .theme_color_project-default {
   /*Значения фонов блоков*/
   --defalut-bg: #ffffff;
@@ -39,6 +45,46 @@ body {
   --additional-tex: rgba(255, 255, 255, 0.3);
   --link-text: #0070f0;
 }
+.theme_color_project-warning {
+  /*Значения фонов блоков*/
+  --defalut-bg: #ff9900;
+  --accent-bg: #ffffff;
+  --border-bg: #ffffff;
+
+  /*Значения состояний текста*/
+  --default-text: #ffffff;
+  --secondary-text: rgba(255, 255, 255, 0.6);
+  --additional-tex: rgba(255, 255, 255, 0.3);
+  --link-text: #fff;
+}
+.theme_color_megafon-brand {
+  /*Значения фонов блоков*/
+  --defalut-bg: #1fa55d;
+  --accent-bg: #ffffff;
+  --border-bg: #ffffff;
+
+  /*Значения состояний текста*/
+  --default-text: #ffffff;
+  --secondary-text: rgba(255, 255, 255, 0.6);
+  --additional-tex: rgba(255, 255, 255, 0.3);
+  --link-text: #fff;
+}
+
+.theme_size_default {
+  /* Значения размеров высоты текста */
+  --size-text-s: 7px;
+  --size-text-m: 8px;
+  --size-text-l: 10px;
+  --size-text-xl: 11px;
+  --size-text-xxl: 13px;
+
+  /* Значения межстрочных интервалов: */
+  --size-lh-s: 18px;
+  --size-lh-m: 21px;
+  --size-lh-l: 25px;
+  --size-lh-xl: 28px;
+  --size-lh-xxl: 34px.;
+}
 
 .theme_space_default {
   --space-xxxs: 2px;
@@ -52,6 +98,15 @@ body {
   --space-xxxl: 40px;
   --space-xxxxl: 48px;
   --space-xxxxxl: 72px.;
+}
+.theme_gap_small {
+  --gap: var(--space-xxxl);
+}
+
+@media screen and (max-width: 1144px) {
+  .theme_gap_small {
+    --gap: var(--space-m);
+  }
 }
 
 .form_border_all {
@@ -69,7 +124,7 @@ body {
   background: var(--defalut-bg);
 }
 .header_space_xxxl {
-  padding: var(--space-xxxl);
+  padding: var(--space-xxxl, --gap);
 }
 .logo {
   width: 179px;
@@ -84,14 +139,21 @@ body {
   border: 2px solid var(--border-bg);
   display: flex;
   align-items: center;
-  padding: 0 6px;
+  padding: 0 2px;
   cursor: pointer;
+  justify-content: flex-end;
 }
 .onoswitch.active {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .onoswitch__slider {
   width: 24px;
   height: 24px;
   background: var(--border-bg);
+}
+
+.footer {
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: var(--space-xxxl, --gap);
 }
