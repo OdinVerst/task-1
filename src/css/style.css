@@ -83,7 +83,7 @@ body {
   --size-lh-m: 21px;
   --size-lh-l: 25px;
   --size-lh-xl: 28px;
-  --size-lh-xxl: 34px.;
+  --size-lh-xxl: 34px;
 }
 
 .theme_space_default {
@@ -97,7 +97,7 @@ body {
   --space-xxl: 32px;
   --space-xxxl: 40px;
   --space-xxxxl: 48px;
-  --space-xxxxxl: 72px.;
+  --space-xxxxxl: 72px;
 }
 .theme_gap_small {
   --gap: var(--space-xxxl);
@@ -334,6 +334,105 @@ body {
 .form__item_space-v_xxxl {
   padding-top: var(--space-xxxl);
   padding-bottom: var(--space-xxxl);
+}
+
+.form__label_width_default,
+.form__control_width_default {
+  width: 35%;
+}
+/*Смотреть BASE*/
+.form__header {
+}
+
+.form__content_distribute_default,
+.form__action_distribute_default {
+  justify-content: flex-start;
+}
+.form__content_distribute_between,
+.form__action_distribute_between {
+  justify-content: space-between;
+}
+.form__content_distribute_center,
+.form__action_distribute_center {
+  justify-content: center;
+}
+.form__content_space-a_xl,
+.form__action_space-a_xl {
+  padding: var(--space-xl);
+}
+.form__content_space-a_xxl,
+.form__action_space-a_xxl {
+  padding: var(--space-xxl);
+}
+
+.list_border_all {
+  border: 3px solid var(--border-bg);
+}
+.list_view_default {
+  background: var(--defalut-bg);
+}
+.list__item_border_bottom {
+  border-bottom: 3px solid var(--border-bg);
+}
+.list__item_border_top {
+  border-top: 3px solid var(--border-bg);
+}
+.list__item_distribute_between {
+  justify-content: space-between;
+}
+.list__item_vertical-align_center {
+  align-items: center;
+}
+.list__item_indent-t_m {
+  margin-top: var(--space-m);
+}
+.list__item_indent-b_s {
+  margin-bottom: var(--space-s);
+}
+.list__item_indent-b_m {
+  margin-bottom: var(--space-m);
+}
+.list__item_indent-b_l {
+  margin-bottom: var(--space-l);
+}
+.list__item_indent-b_xl {
+  margin-bottom: var(--space-xl);
+}
+.list__item_space-b_s {
+  padding-bottom: var(--space-s);
+}
+.list__item_space-a_l {
+  padding: var(--space-l);
+}
+
+.icon-plus_vertical-align_center {
+  align-items: center;
+}
+.icon-plus__icon_indent-r_s {
+  margin-right: var(--space-s);
+}
+.icon-plus__icon_indent-r_m {
+  margin-right: var(--space-m);
+}
+.icon-plus__icon_indent-l_l {
+  margin-left: var(--space-l);
+}
+
+.section_indent-b_xxl {
+  margin-bottom: var(--space-xxl);
+}
+.section_indent-b_xxxxl {
+  margin-bottom: var(--space-xxxxl);
+}
+.section_space-v_xxl {
+  padding: var(--space-xxl) 0;
+}
+.section_space-v_xxxxl {
+  padding: var(--space-xxxxl) 0;
+}
+
+.text_align_center {
+  justify-content: center;
 }
 
 @media screen and (max-width: 1144px) {
