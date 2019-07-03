@@ -16,7 +16,7 @@ body {
   /*Значения состояний текста*/
   --default-text: #000000;
   --secondary-text: rgba(0, 0, 0, 0.6);
-  --additional-tex: rgba(0, 0, 0, 0.3);
+  --additional-text: rgba(0, 0, 0, 0.3);
   --link-text: #0070f0;
 }
 
@@ -29,7 +29,7 @@ body {
   /*Значения состояний текста*/
   --default-text: #ffffff;
   --secondary-text: rgba(255, 255, 255, 0.6);
-  --additional-tex: rgba(255, 255, 255, 0.3);
+  --additional-text: rgba(255, 255, 255, 0.3);
   --link-text: #ffffff;
 }
 
@@ -42,7 +42,7 @@ body {
   /*Значения состояний текста*/
   --default-text: #ffffff;
   --secondary-text: rgba(255, 255, 255, 0.6);
-  --additional-tex: rgba(255, 255, 255, 0.3);
+  --additional-text: rgba(255, 255, 255, 0.3);
   --link-text: #0070f0;
 }
 .theme_color_project-warning {
@@ -54,7 +54,7 @@ body {
   /*Значения состояний текста*/
   --default-text: #ffffff;
   --secondary-text: rgba(255, 255, 255, 0.6);
-  --additional-tex: rgba(255, 255, 255, 0.3);
+  --additional-text: rgba(255, 255, 255, 0.3);
   --link-text: #fff;
 }
 .theme_color_megafon-brand {
@@ -66,7 +66,7 @@ body {
   /*Значения состояний текста*/
   --default-text: #ffffff;
   --secondary-text: rgba(255, 255, 255, 0.6);
-  --additional-tex: rgba(255, 255, 255, 0.3);
+  --additional-text: rgba(255, 255, 255, 0.3);
   --link-text: #fff;
 }
 
@@ -433,6 +433,162 @@ body {
 
 .text_align_center {
   justify-content: center;
+}
+.text_size_s {
+  font-size: var(--size-text-s);
+}
+.text_size_m {
+  font-size: var(--size-text-m);
+}
+.text_size_l {
+  font-size: var(--size-text-l);
+}
+.text_size_xl {
+  font-size: var(--size-text-xl);
+}
+.text_size_xxl {
+  font-size: var(--size-text-xxl);
+}
+
+.text_type_h1 {
+  margin: 15px 0 21px;
+}
+.text_type_h2 {
+  margin: 48px 0 20px;
+}
+.text_type_h3 {
+  margin: 43px 0 0;
+}
+.text_type_p {
+  margin: 15px 0 21px;
+}
+
+.text_view_primary {
+  color: var(--default-text);
+}
+.text_view_secondary {
+  color: var(--secondary-text);
+}
+
+.text_view_ghost {
+  color: var(--additional-text);
+}
+.text_view_link {
+  color: var(--link-text);
+}
+
+.text__word_s {
+  width: var(--word-width-s);
+  height: var(--word-height);
+  background-color: var(--word-color-bg);
+}
+.text__word_m {
+  width: var(--word-width-m);
+  height: var(--word-height);
+  background-color: var(--word-color-bg);
+}
+.text__word_l {
+  width: var(--word-width-l);
+  height: var(--word-height);
+  background-color: var(--word-color-bg);
+}
+
+.avatar {
+  background: var(--defalut-bg);
+}
+.avatar_size_m {
+  width: 60px;
+  height: 60px;
+}
+
+.brand-logo_name_yota {
+  background: #00c0f8;
+}
+.brand-logo_name_megafon {
+  background: #33c778;
+}
+.brand-logo_name_kcell {
+  background: #692b96;
+}
+.brand-logo_name_mts {
+  background: #f70000;
+}
+.brand-logo_size_xxs {
+  width: 24px;
+  height: 24px;
+}
+.brand-logo_size_xs {
+  width: 32px;
+  height: 32px;
+}
+.brand-logo_size_s {
+  width: 40px;
+  height: 40px;
+}
+.brand-logo_size_m {
+  width: 60px;
+  height: 60px;
+}
+.brand-logo_size_l {
+  width: 80px;
+  height: 80px;
+}
+
+.placeholder {
+  background: var(--default-text);
+}
+.placeholder_size_m {
+  width: 72px;
+  height: 72px;
+}
+
+.button_size_s {
+  height: 24px;
+}
+.button_size_m {
+  height: 32px;
+}
+.button_size_l {
+  height: 42px;
+}
+.button_size_xl {
+  height: 56px;
+}
+.button_size_xxl {
+  height: 64px;
+}
+.button_width_full {
+  width: 100%;
+}
+
+.input {
+  flex-grow: 1;
+}
+.input_size_s {
+  height: 24px;
+}
+.input_size_m {
+  height: 32px;
+}
+.input_size_l {
+  height: 42px;
+}
+.input_size_xl {
+  height: 56px;
+}
+.input_size_xxl {
+  height: 64px;
+}
+
+.image {
+  flex-grow: 1;
+  border: 3px solid var(--border-bg);
+  background: url(image.svg) center center no-repeat;
+}
+.image-inverse {
+  flex-grow: 1;
+  border: 3px solid var(--border-bg);
+  background: url(image-inverse.svg) center center no-repeat;
 }
 
 @media screen and (max-width: 1144px) {
