@@ -436,18 +436,33 @@ body {
 }
 .text_size_s {
   font-size: var(--size-text-s);
+  --word-width-s: 20px;
+  --word-width-m: 48px;
+  --word-width-l: 100px;
 }
 .text_size_m {
   font-size: var(--size-text-m);
+  --word-width-s: 24px;
+  --word-width-m: 56px;
+  --word-width-l: 114px;
 }
 .text_size_l {
   font-size: var(--size-text-l);
+  --word-width-s: 28px;
+  --word-width-m: 68px;
+  --word-width-l: 138px;
 }
 .text_size_xl {
   font-size: var(--size-text-xl);
+  --word-width-s: 32px;
+  --word-width-m: 74px;
+  --word-width-l: 154px;
 }
 .text_size_xxl {
   font-size: var(--size-text-xxl);
+  --word-width-s: 36px;
+  --word-width-m: 88px;
+  --word-width-l: 184px;
 }
 
 .text_type_h1 {
@@ -478,19 +493,19 @@ body {
 }
 
 .text__word_s {
+  height: var(--size-text-s);
   width: var(--word-width-s);
-  height: var(--word-height);
-  background-color: var(--word-color-bg);
+  background-color: var(--default-text);
 }
 .text__word_m {
+  height: var(--size-text-m);
   width: var(--word-width-m);
-  height: var(--word-height);
-  background-color: var(--word-color-bg);
+  background-color: var(--default-text);
 }
 .text__word_l {
+  height: var(--size-text-l);
   width: var(--word-width-l);
-  height: var(--word-height);
-  background-color: var(--word-color-bg);
+  background-color: var(--default-text);
 }
 
 .avatar {
@@ -540,6 +555,10 @@ body {
 .placeholder_size_m {
   width: 72px;
   height: 72px;
+}
+.button {
+  flex-grow: 1;
+  background: var(--accent-bg);
 }
 
 .button_size_s {
@@ -591,6 +610,34 @@ body {
   background: url(image-inverse.svg) center center no-repeat;
 }
 
+/*Content*/
+.payment {
+  border: 3px solid var(--border-bg);
+  display: flex;
+  flex-direction: column;
+  background: var(--defalut-bg);
+  max-width: 555px;
+}
+.payment__button_wrapper {
+  width: 200px;
+}
+.payment__content {
+}
+.payment__input {
+  width: 326px;
+  border: 3px solid var(--border-bg);
+}
+.payment__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment__item {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 1144px) {
   .theme_gap_small {
     --gap: var(--space-m);
@@ -601,10 +648,6 @@ body {
   border: 3px solid var(--border-bg);
 }
 
-.payment {
-  display: flex;
-  background: var(--defalut-bg);
-}
 .header {
   display: flex;
   align-items: center;
