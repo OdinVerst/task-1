@@ -23,7 +23,7 @@
 
 #### .warning — блок предупреждения
 
-[Скриншот](https://github.com/yndx-shri-reviewer/task-1/blob/master/assets/screenshots/warning.png)
+[С криншот](https://github.com/yndx-shri-reviewer/task-1/blob/master/assets/screenshots/warning.png)
 
 Из уровня дизайн-сиcтемы блок должен использовать:
 
